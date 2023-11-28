@@ -216,10 +216,12 @@
     }
     
     .email{
+        color: darkblue;
         font-weight: bold;
         text-decoration: underline;
         
     }
+
    
     .col-4 img{
     
@@ -400,12 +402,9 @@
     background-color: #3e8e41;
   }
 
-  /* ------------Military------------------ */
 
-  .alert{
-    background-color: rgb(73, 73, 73);
-    font-family: 'PT Serif', serif;
-}
+
+ 
 
 
 .test{
@@ -430,73 +429,6 @@
 
 
 
-.Proceed{
-
-
-    background-color:  black;
-    border: none;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    
-   
-
-}
-
-.Return{
-
-    background-color:  black;
-    border: none;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    
-
-
-}
-
-.Proceed:hover{
-
-    transform: translateY(-5px);
-    color: rgb(142, 223, 22);
-
-}
-
-.Return:hover{
-
-    transform: translateY(-5px);
-    color: red;
-}
-
-.warning{
-    color: red;
-    font-size: x-large;
-
-}
-
-.symbol{
-
-    color: rgb(245, 245, 29);
-    font-size: xx-large;
-    
-}
-
-button{
-
-    width: 100px;
-}
 
 
 .col-3{
@@ -509,7 +441,7 @@ button{
 
 
 
-/* ceci indique le width des image dans featured categories */
+
 .col-3 img{
     width: 100%;
 }
