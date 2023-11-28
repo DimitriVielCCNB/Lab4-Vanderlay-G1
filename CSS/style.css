@@ -507,9 +507,7 @@ button{
     transition: transform 0.5s;
 }
 
-.col-3:hover{
-    transform: translateY(-10px);
-}
+
 
 /* ceci indique le width des image dans featured categories */
 .col-3 img{
