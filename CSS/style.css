@@ -494,6 +494,8 @@
      
       .flex {
         display: flex;
+        width: 100%;
+        border: 0.5px solid blue;
     }
     /* Style job_filters div englobe search_jobs */
       .job_filters {
@@ -508,7 +510,7 @@
         display: flex;
         flex-flow: row wrap;
         margin: 30px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
        
       }
@@ -550,6 +552,11 @@
         border: 0.5px solid gainsboro;
         padding: 20px;
         margin-top: 10px;
+        width: 100%;
+      }
+      .child h4{
+      
+      text-align: left;
       }
       .gray-text{
         color: #999;
