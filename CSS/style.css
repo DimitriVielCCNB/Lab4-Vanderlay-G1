@@ -278,7 +278,7 @@
     /* -------------------------footer---------------- */
    
     .footer{
-        background: darkcyan;
+        background: #4869b7;
         color: whitesmoke;
         font-size: 14px;
         padding: 60px 0 20px;
@@ -337,6 +337,10 @@
    
     .copyright{
         text-align: center;
+    }
+
+    .footer-col-4 li, .footer-col-3 li{
+        color: whitesmoke;
     }
 /* bouton au bas de la page */
     
