@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /*background-color: #f7fbf1; /* background-Color for entire web*/
+        color: black; /* Color for entire Bold text and button  */
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
 
+      .h1-title{
+        color: white;
+        background-color: #4869b7;
+        padding: 10px;
+      }
+      .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid blue;
+      }
+      .child {
+        border: 2px solid red;
+        padding: 20px;
+        margin-top: 10px;
+      }
+      .full-time {
+        color: green;
+        font-size: 20px;
+      }
+      .part-time{
+        color: tomato;
+        font-size: 20px;
+      }
+      .flex {
+        display: flex;
+    
+      .job_filters {
+        border: 12px solid green;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+      }
+      }
+      .search_jobs{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 30px;
+        justify-content: space-between;
+        align-content: center;
+       
+      }
+      .search_keywords {
+     
+      }
+      .job_types li{
+   /*    border: 2px solid blue; */
+        display: inline;
+        padding: 5px;
+        margin-top: 10px;
+
+      }
+      .search_submit1{
+        background-color: #4869b7;
+        color:#fff;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 14px;
+        border: 2px solid blue;
+        padding: 15px 22px!important;
+        width: auto;
+      }
+      ul{
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      summary{
+        color: #4869b7;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="h1-title">Vanderlay Inc : Your first stepe for Working</h1>
+    <br />
+
+    <form class="job_filters">
+      <div class="search_jobs">
+        <div class="search_keywords">
+          <input
+            type="text"
+            name="search_keywords"
+            id="search_keywords"
+            placeholder="Keywords"
+            value=""
+            data-ddg-inputtype="unknown"
+          />
+        </div>
+
+        <div class="search_location">
+          <input
+            type="text"
+            name="search_location"
+            id="search_location"
+            placeholder="Location"
+            value=""
+            data-ddg-inputtype="unknown"
+          />
+        </div>
+
+        <div class="search_remote_position">
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="remote_position"
+            id="remote_position"
+            placeholder="Location"
+            value="1"
+          />
+          <label for="remote_position" id="remote_position_label"
+            >Remote positions only</label
+          >
+        </div>
+
+        <!-- <div style="clear: both"></div> -->
+
+        <div class="search_submit">
+          <input class ='search_submit1' type="submit" value="Search Jobs" />
+        </div>
+      </div>
+
+      <ul class="job_types">
+        <li>
+          <label for="job_type_freelance" class="freelance"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="freelance"
+              checked="checked"
+              id="job_type_freelance"
+            />
+            Freelance</label
+          >
+        </li>
+        <li>
+          <label for="job_type_full-time" class="full-time"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="full-time"
+              checked="checked"
+              id="job_type_full-time"
+            />
+            Full Time</label
+          >
+        </li>
+        <li>
+          <label for="job_type_internship" class="internship"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="internship"
+              checked="checked"
+              id="job_type_internship"
+            />
+            Internship</label
+          >
+        </li>
+        <li>
+          <label for="job_type_part-time" class="part-time"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="part-time"
+              checked="checked"
+              id="job_type_part-time"
+            />
+            Part Time</label
+          >
+        </li>
+        <li>
+          <label for="job_type_temporary" class="temporary"
+            ><input
+              type="checkbox"
+              name="filter_job_type[]"
+              value="temporary"
+              checked="checked"
+              id="job_type_temporary"
+            />
+            Temporary</label
+          >
+        </li>
+      </ul>
+      <input type="hidden" name="filter_job_type[]" value="" />
+      <div class="showing_jobs" style="display: none"></div>
+    </form>
+
+    <!-- 
+Job
+
+Search  -->
+    <div class="container">
+       
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Universal Staffing Inc. UNIVERSAL STAFFING IS LOOKING FOR A DZ
+            RECYCLING DRIVER CAMBRIDGE/KW REGION!
+          </h4>
+          <p>Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5>Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Universal Staffing Inc. UNIVERSAL STAFFING IS LOOKING FOR A DZ
+            RECYCLING DRIVER CAMBRIDGE/KW REGION!
+          </h4>
+          <p>Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5>Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Universal Staffing Inc. UNIVERSAL STAFFING IS LOOKING FOR A DZ
+            RECYCLING DRIVER CAMBRIDGE/KW REGION!
+          </h4>
+          <p>Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5>Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="full-time">Full Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+
+      <section class="flex">
+        <div class="child">
+          <h4>
+            Universal Staffing Inc. UNIVERSAL STAFFING IS LOOKING FOR A DZ
+            RECYCLING DRIVER CAMBRIDGE/KW REGION!
+          </h4>
+          <p>Universal Staffing In</p>
+          <details>
+            <summary>See More</summary>
+            <p>
+              Epcot is a theme park at Walt Disney World Resort featuring
+              exciting attractions, international pavilions, award-winning
+              fireworks and seasonal special events.
+            </p>
+          </details>
+        </div>
+
+        <div class="child">
+          <h5>Cambridge/KW,ON</h5>
+        </div>
+
+        <div class="child">
+          <h5 class="part-time">Part Time</h5>
+          Posted on November 24, 2023
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
