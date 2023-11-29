@@ -281,7 +281,7 @@
         background: #4869b7;
         color: whitesmoke;
         font-size: 14px;
-        padding: 60px 0 20px;
+        padding: 30px 0 20px;
     }
    
     .footer p{
@@ -289,8 +289,10 @@
     }
  
     .footer h3{
+        font-size: larger;
+        font-weight: 700;
         color:whitesmoke;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         
     }
   
@@ -312,7 +314,7 @@
     }
     
     .footer-col-2 img{
-        width: 180px;
+        width: 200px;
         margin-bottom: 20px;
     }
     
@@ -339,8 +341,17 @@
         text-align: center;
     }
 
-    .footer-col-4 li, .footer-col-3 li{
+    .footer-col-4 li, .footer-col-3 li, .footer-col-2 li, .footer-col-1 li{
         color: whitesmoke;
+        font-size: large;
+    }
+
+    .footer-col-2 p, .footer-col-1 p{
+        font-size: large;
+    }
+
+    .footer-col-1 a{
+        font-size: large;
     }
 /* bouton au bas de la page */
     
