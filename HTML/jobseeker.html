@@ -1,115 +1,62 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <style>
-
-/* Style margin and padding for All page to default */
-      * {
-        margin: 0;
-        padding: 0;
-        /*background-color: #f7fbf1; /* background-Color for entire web*/
-        color: black; /* Color for entire Bold text and button  */
-      }
-
-      /* Style box-sizing for all border */
-      html {
-        box-sizing: border-box;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-
-          /* Style deffillant h1-title  */
-
-      .h1-title{
-        color: white;
-        background-color: #4869b7;
-        padding: 10px;
-        text-align: center;
-      }
-     
-      .flex {
-        display: flex;
-    }
-    /* Style job_filters div englobe search_jobs */
-      .job_filters {
-        border: 0.5px solid rgb(41, 0, 128);
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-      }
-      
-        /* Style search_jobs(Contient Keywoords, location, Remote and button search) pour le rendre flexible */
-      .search_jobs{
-        display: flex;
-        flex-flow: row wrap;
-        margin: 30px;
-        justify-content: space-between;
-        align-content: center;
-       
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandelay Industries</title>
     
 
-       /* Style job_types li */
-      .job_types li{
-   /*    border: 2px solid blue; */
-        display: inline;
-        padding: 5px;
-        margin-top: 10px;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Style.css">  
+    
+</head>
+<body>
 
-      }
 
-        /* Style submit Botton */
-      .search_submit1{
-        background-color: #4869b7;
-        color:#fff;
-        border-radius: 2px;
-        font-weight: 600;
-        font-size: 14px;
-        border: 2px solid blue;
-        padding: 15px 22px!important;
-        width: auto;
-      }
-      ul{
-        padding: 10px;
-        margin-bottom: 10px;
-      }
- /* Style Section contenant All Jobs */
-      .container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        border: 1px solid blue;
-      }
-      .child {
-        border: 0.5px solid gainsboro;
-        padding: 20px;
-        margin-top: 10px;
-      }
-      .gray-text{
-        color: #999;
-        font-size: 16px;
-      }
-      .full-time {
-        color: green;
-        font-size: 20px;
-      }
-      .part-time{
-        color: tomato;
-        font-size: 20px;
-      }
-      /* Style see more details  */
-      summary{
-        color: #4869b7;
-        font-size: 18px;
-      }
-    </style>
-  </head>
+    <!-- NAVIGATIONS -->
 
-  <body>
+<div class="header">
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Images/wip_vandelay_logo-removebg-preview.png" width="175px" height="120px">
+            
+        </div>
+        <nav class="ul">
+            <ul>
+                        <li><a href="../HTML/homepage.html" class="navhover">Home</a></li>
+                        <li><a href="../HTML/jobseeker.html" class="navhover ">Job Seeker</a></li> 
+                        <li><a href="../HTML/application.html" class="navhover ">Application</a></li> 
+                        <li><a href="../HTML/contact.html" class="navhover ">Contact Us</a></li> 
+                        <li><a href="../HTML/aboutus.html" class="navhover">About Us</a></li>
+
+            </ul>
+        </nav>
+    
+     </div>
+
+     <!-- LA BOITE POUR LE HAUT DE LA PAGE AVEC LA PHOTO DE PERSONNAGE ET AUSSI LA PHRASE PRINCIPALE DU SITE -->
+    
+    <div class="row">
+        <div class="col-2">
+            <h1>Vandelay Industries,<br>  </h1>
+            <p>Your Number One Job Finder Website ,
+            <br>With the best data and insight you need to find the best work possible, we take your future seriously and only offer the best opportunities in the field.</p>
+    
+               
+        </div>
+      
+        <div class="col-2">
+            <img src="../Images/header.webp">
+        </div>
+    </div>
+  </div>
+</div>
+
+ 
 
         <!-- Title h1 with marquee Balise  -->
    <marquee><h1 class="h1-title">Vanderlay Inc : Your first stepe for Working</h1></marquee> 
@@ -232,7 +179,7 @@
 
 
     <!-- Job Search  Full and Part Time  -->
-    <div class="container">
+    <div class="container-job">
        
       <section class="flex">
         <div class="child">
@@ -342,6 +289,46 @@
         </div>
       </section>
     </div>
+<!-- footer -->
 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Us Via Email : </h3>
+                <a href="mailto:info@vandelayind.com" class="email">info@vandelayind.com</a>
+                
+                <p>1435 Elford St, Victoria, BC, V8S3S9, CAN</p>
+                <p>Phone : (555)555-5555 </p>
+        
+            </div>
+            <div class="footer-col-2">
+                <img src="../Images/wip_vandelay_logo-removebg-preview.png">
+                <p>A Place You Want To Be !  </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Career</li>
+                   <li>Contact Us</li>
+                    <li>Return Policy</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follows Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter / X</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <!-- ceci represente la ligne en bas au dessus du copyright -->
+        <hr>
+        <p class="copyright">Vandelay Industries © 2023</p>
+    </div>
+</div>
   </body>
 </html>
