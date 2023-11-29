@@ -446,4 +446,111 @@
 .col-3 img{
     width: 100%;
 }
+/*                                           Style Joobseekers Page                                   */
 
+
+
+/* Style margin and padding for All page to default */
+      * {
+        margin: 0;
+        padding: 0;
+        /*background-color: #f7fbf1; /* background-Color for entire web*/
+        color: black; /* Color for entire Bold text and button  */
+      }
+
+      /* Style box-sizing for all border */
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+          /* Style deffillant h1-title  */
+
+      .h1-title{
+        color: white;
+        background-color: #4869b7;
+        padding: 10px;
+        text-align: center;
+      }
+     
+      .flex {
+        display: flex;
+    }
+    /* Style job_filters div englobe search_jobs */
+      .job_filters {
+        border: 0.5px solid rgb(41, 0, 128);
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+      }
+      
+        /* Style search_jobs(Contient Keywoords, location, Remote and button search) pour le rendre flexible */
+      .search_jobs{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 30px;
+        justify-content: space-between;
+        align-content: center;
+       
+      }
+    
+
+       /* Style job_types li */
+      .job_types li{
+   /*    border: 2px solid blue; */
+        display: inline;
+        padding: 5px;
+        margin-top: 10px;
+
+      }
+
+        /* Style submit Botton */
+      .search_submit1{
+        background-color: #4869b7;
+        color:#fff;
+        border-radius: 2px;
+        font-weight: 600;
+        font-size: 14px;
+        border: 2px solid blue;
+        padding: 15px 22px!important;
+        width: auto;
+      }
+      ul{
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+ /* Style Section contenant All Jobs */
+      .container-job {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        border: 1px solid blue;
+      }
+      .child {
+        border: 0.5px solid gainsboro;
+        padding: 20px;
+        margin-top: 10px;
+      }
+      .gray-text{
+        color: #999;
+        font-size: 16px;
+      }
+      .full-time {
+        color: green;
+        font-size: 20px;
+      }
+      .part-time{
+        color: tomato;
+        font-size: 20px;
+      }
+      /* Style see more details  */
+      summary{
+        color: #4869b7;
+        font-size: 18px;
+      }
+   
